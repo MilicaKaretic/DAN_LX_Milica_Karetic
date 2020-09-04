@@ -4,6 +4,7 @@ using DAN_LX_Milica_Karetic.Helper;
 using DAN_LX_Milica_Karetic.Model;
 using DAN_LX_Milica_Karetic.View;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
@@ -17,12 +18,10 @@ namespace DAN_LX_Milica_Karetic.ViewModel
     /// </summary>
     class UserViewModel : BaseViewModel
     {
-        #region Global Variables
         readonly UserWindow userWindow;
         UserData userData = new UserData();
         LocationData locationData = new LocationData();
         private readonly BackgroundWorker bgWorker = new BackgroundWorker();
-        #endregion
 
         #region Constuctor
         /// <summary>
@@ -31,9 +30,11 @@ namespace DAN_LX_Milica_Karetic.ViewModel
         /// <param name="userOpen">opens the user window</param>
         public UserViewModel(UserWindow userOpen)
         {
+
             userWindow = userOpen;
             UserList = new ObservableCollection<tblUser>(userData.GetAllUsers().ToList());
             locationData.GetAllLocations().ToList();
+
 
             bgWorker.DoWork += WorkerOnDoWorkDelete;
         }
