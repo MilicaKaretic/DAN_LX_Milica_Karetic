@@ -1,12 +1,12 @@
-﻿using DAN_LX_Kristina_Garcia_Francisco.DataAccess;
-using DAN_LX_Kristina_Garcia_Francisco.Model;
+﻿using DAN_LX_Milica_Karetic.DataAccess;
+using DAN_LX_Milica_Karetic.Model;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Data;
 
-namespace DAN_LX_Kristina_Garcia_Francisco.Converter
+namespace DAN_LX_Milica_Karetic.Converter
 {
     /// <summary>
     /// Convertes the id of the location to the location address, city and country

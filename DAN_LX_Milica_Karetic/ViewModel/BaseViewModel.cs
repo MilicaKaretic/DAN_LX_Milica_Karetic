@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace DAN_LX_Kristina_Garcia_Francisco.ViewModel
+namespace DAN_LX_Milica_Karetic.ViewModel
 {
     /// <summary>
     /// Base view model that implements the interface INotifyPropertyChanged

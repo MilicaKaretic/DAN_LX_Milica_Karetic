@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Data;
 
-namespace DAN_LX_Kristina_Garcia_Francisco.Converter
+namespace DAN_LX_Milica_Karetic.Converter
 {
     /// <summary>
     /// Converts the value of the radio button to the string representing a gender

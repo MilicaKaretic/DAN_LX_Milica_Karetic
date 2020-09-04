@@ -64,6 +64,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Commands\RelayCommand.cs" />
+    <Compile Include="Converter\FullNameConverter.cs" />
+    <Compile Include="Converter\GenderConverter.cs" />
+    <Compile Include="Converter\LocationConverter.cs" />
+    <Compile Include="Converter\SectorConverter.cs" />
+    <Compile Include="DataAccess\LocationData.cs" />
+    <Compile Include="DataAccess\SectorData.cs" />
+    <Compile Include="DataAccess\UserData.cs" />
+    <Compile Include="Helper\LogMessage.cs" />
+    <Compile Include="Helper\Validations.cs" />
     <Compile Include="Model\EmployeeDBModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -77,6 +87,16 @@
     </Compile>
     <Compile Include="Model\tblUser.cs">
       <DependentUpon>EmployeeDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\User.cs" />
+    <Compile Include="ViewModel\AddUserViewModel.cs" />
+    <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\UserViewModel.cs" />
+    <Compile Include="View\AddUserWindow.xaml.cs">
+      <DependentUpon>AddUserWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserWindow.xaml.cs">
+      <DependentUpon>UserWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -100,6 +120,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\AddUserWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UserWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -147,6 +175,8 @@
       <DependentUpon>EmployeeDBModel.edmx</DependentUpon>
       <LastGenOutput>EmployeeDBModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="TextFile\Locations.txt" />
+    <Resource Include="TextFile\LogFile.txt" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

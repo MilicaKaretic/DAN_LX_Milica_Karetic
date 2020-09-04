@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace DAN_LX_Kristina_Garcia_Francisco.Commands
+namespace DAN_LX_Milica_Karetic.Commands
 {
     /// <summary>
     /// RelayCommand class

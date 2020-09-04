@@ -1,10 +1,10 @@
-﻿using DAN_LX_Kristina_Garcia_Francisco.DataAccess;
-using DAN_LX_Kristina_Garcia_Francisco.Model;
+﻿using DAN_LX_Milica_Karetic.DataAccess;
+using DAN_LX_Milica_Karetic.Model;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 
-namespace DAN_LX_Kristina_Garcia_Francisco.Helper
+namespace DAN_LX_Milica_Karetic.Helper
 {
     /// <summary>
     /// User input validations and preview

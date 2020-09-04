@@ -1,8 +1,8 @@
-﻿using DAN_LX_Kristina_Garcia_Francisco.Commands;
-using DAN_LX_Kristina_Garcia_Francisco.DataAccess;
-using DAN_LX_Kristina_Garcia_Francisco.Helper;
-using DAN_LX_Kristina_Garcia_Francisco.Model;
-using DAN_LX_Kristina_Garcia_Francisco.View;
+﻿using DAN_LX_Milica_Karetic.Commands;
+using DAN_LX_Milica_Karetic.DataAccess;
+using DAN_LX_Milica_Karetic.Helper;
+using DAN_LX_Milica_Karetic.Model;
+using DAN_LX_Milica_Karetic.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
-namespace DAN_LX_Kristina_Garcia_Francisco.ViewModel
+namespace DAN_LX_Milica_Karetic.ViewModel
 {
     /// <summary>
     /// Add User Window
@@ -280,7 +280,7 @@ namespace DAN_LX_Kristina_Garcia_Francisco.ViewModel
         /// </summary>
         private void CloseExecute()
         {
-            var result = Xceed.Wpf.Toolkit.MessageBox.Show("Are you sure you want to exit?\nAll Data will be lost.", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            var result = MessageBox.Show("Are you sure you want to exit?\nAll Data will be lost.", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
             if (result == MessageBoxResult.Yes)
             {
@@ -290,7 +290,7 @@ namespace DAN_LX_Kristina_Garcia_Francisco.ViewModel
                 }
                 catch (Exception ex)
                 {
-                    Xceed.Wpf.Toolkit.MessageBox.Show(ex.ToString());
+                    MessageBox.Show(ex.ToString());
                 }
             }
             else

@@ -2,7 +2,7 @@
 using System.IO;
 using System.Threading;
 
-namespace DAN_LX_Kristina_Garcia_Francisco.Helper
+namespace DAN_LX_Milica_Karetic.Helper
 {
     /// <summary>
     /// Class that creates a log message and saves it to the file

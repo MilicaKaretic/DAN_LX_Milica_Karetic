@@ -1,8 +1,8 @@
-﻿using DAN_LX_Kristina_Garcia_Francisco.Commands;
-using DAN_LX_Kristina_Garcia_Francisco.DataAccess;
-using DAN_LX_Kristina_Garcia_Francisco.Helper;
-using DAN_LX_Kristina_Garcia_Francisco.Model;
-using DAN_LX_Kristina_Garcia_Francisco.View;
+﻿using DAN_LX_Milica_Karetic.Commands;
+using DAN_LX_Milica_Karetic.DataAccess;
+using DAN_LX_Milica_Karetic.Helper;
+using DAN_LX_Milica_Karetic.Model;
+using DAN_LX_Milica_Karetic.View;
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Input;
 
-namespace DAN_LX_Kristina_Garcia_Francisco.ViewModel
+namespace DAN_LX_Milica_Karetic.ViewModel
 {
     /// <summary>
     /// User Window
@@ -116,7 +116,7 @@ namespace DAN_LX_Kristina_Garcia_Francisco.ViewModel
         public void DeleteUserExecute()
         {
             // Checks if the user really wants to delete the selected User
-            var result = Xceed.Wpf.Toolkit.MessageBox.Show("Are you sure you want to delete the user?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            var result = MessageBox.Show("Are you sure you want to delete the user?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
             if (result == MessageBoxResult.Yes)
             {

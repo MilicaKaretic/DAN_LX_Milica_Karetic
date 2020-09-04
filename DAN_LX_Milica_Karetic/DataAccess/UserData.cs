@@ -1,11 +1,11 @@
-﻿using DAN_LX_Kristina_Garcia_Francisco.Helper;
-using DAN_LX_Kristina_Garcia_Francisco.Model;
+﻿using DAN_LX_Milica_Karetic.Helper;
+using DAN_LX_Milica_Karetic.Model;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
-namespace DAN_LX_Kristina_Garcia_Francisco.DataAccess
+namespace DAN_LX_Milica_Karetic.DataAccess
 {
     /// <summary>
     /// Class that includes all User CRUD functions of the application
